@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Revisão Prática de JavaScript</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .destaque {
+            background-color: yellow;
+        }
+
+        input {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Revisão Prática de JavaScript</h1>
+
+    <div class="box">
+        <h2 id="titulo">Texto Original</h2>
+        <button id="btnMudar">Mudar Título</button>
+    </div>
+
+    <div class="box">
+        <h2>Contador: <span id="contador">0</span></h2>
+        <button id="btnIncrementar">Incrementar</button>
+    </div>
+
+    <div class="box">
+        <p class="paragrafo">Parágrafo 1</p>
+        <p class="paragrafo">Parágrafo 2</p>
+        <button id="btnDestacar">Destacar Parágrafos</button>
+    </div>
+
+    <div class="box">
+        <h2>Espelho de Digitação</h2>
+
+        <input
+            type="text"
+            id="campoInput"
+            placeholder="Digite algo aqui..."
+        >
+
+        <p>Você está digitando:
+            <span id="textoRefletido"></span>
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>Calculadora Simples</h2>
+
+        <input
+            type="number"
+            id="num1"
+            placeholder="Primeiro número"
+        >
+
+        <input
+            type="number"
+            id="num2"
+            placeholder="Segundo número"
+        >
+
+        <div>
+            <button id="btnSoma">Somar (+)</button>
+            <button id="btnSub">Subtrair (-)</button>
+            <button id="btnMulti">Multiplicar (*)</button>
+            <button id="btnDiv">Dividir (/)</button>
+        </div>
+
+        <h3>Resultado: <span id="resultado">---</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
