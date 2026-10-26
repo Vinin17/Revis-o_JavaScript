@@ -1,0 +1,38 @@
+Desafio 1: A variável numero é do tipo string, pois o valor está entre aspas, 
+enquanto numeroReal é do tipo number. Ao executar numero + 5, o resultado será "505", 
+pois os valores serão unidos como texto. Já numeroReal + 5 resultará em 55, pois será 
+realizada uma soma matemática.
+
+Desafio 2: const idade = 17; const status = idade >= 18 ? "Maior de idade" : "Menor de idade";
+
+Desafio 3: for (let i = 1; i <= 10; i++). A condição i <= 10 faz o laço repetir até o número 10.
+
+Desafio 4: Para adicionar Uva no início da lista, usamos lista.unshift("Uva"). Para remover o 
+último item, usamos lista.pop(). Ao usar lista.push("Melão"), o Melão ficará no índice 2.
+
+Desafio 5: const somar = (a, b) => a + b;
+
+Desafio 6: O método .filter() cria um novo array sem modificar a lista original. Se o resultado 
+não for armazenado em uma variável ou utilizado de outra forma, não será possível acessá-lo 
+posteriormente.
+
+Desafio 7: É necessário usar Number() ou parseFloat() porque o .value dos campos HTML retorna 
+uma string. Sem a conversão, ao somar os valores "10" e "5", por exemplo, o JavaScript poderá juntar
+ os textos, produzindo "105", em vez de realizar a soma matemática, que seria 15.
+
+Desafio 8: O querySelector() seleciona apenas o primeiro elemento correspondente, enquanto o 
+querySelectorAll() seleciona todos os elementos correspondentes. Se usarmos querySelector(), apenas 
+o primeiro parágrafo será pintado.
+
+Desafio 9: btnSoma.addEventListener("click", calcular);
+
+Desafio Integrado:
+1. O código deve verificar se o segundo número é igual a zero antes de realizar a divisão, para evitar 
+um resultado Infinity.
+2. A estrutura if pode ser escrita assim:
+
+if (num2 === 0) {
+    resultado.innerText = "Não se divide por 0.";
+} else {
+    resultado.innerText = dividir(num1, num2);
+}
